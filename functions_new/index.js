@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,46 +92,25 @@ module.exports = require("firebase-functions");
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 
+// EXTERNAL MODULE: external "firebase-functions"
+var external_firebase_functions_ = __webpack_require__(0);
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.helloworld = undefined;
+// CONCATENATED MODULE: ./src/Server/App.fs
 
-var _firebaseFunctions = __webpack_require__(0);
 
 function handler(req, res) {
     res.send("Hello"), void 0;
 }
 
-const helloworld = exports.helloworld = _firebaseFunctions.https.onRequest(handler);
+const helloworld = external_firebase_functions_["https"].onRequest(handler);
+// CONCATENATED MODULE: ./src/Server/Server.fsproj
+/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "helloworld", function() { return helloworld; });
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _App = __webpack_require__(1);
-
-Object.keys(_App).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _App[key];
-    }
-  });
-});
 
 /***/ })
 /******/ ]);
