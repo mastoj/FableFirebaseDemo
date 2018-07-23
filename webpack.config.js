@@ -22,7 +22,7 @@ var babelOptions = fableUtils.resolveBabelOptions({
                 "targets": {
                     "node": "6" // "browsers": ["last 2 versions"]
                 },
-                "modules": "commonjs"
+                "modules": false
             }
         ]
     ]
@@ -166,7 +166,8 @@ let serverConfig = Object.assign({
     entry: resolve("src/Server/Server.fsproj"),
     output: {
         path: resolve("functions/"),
-        filename: "index.js"
+        filename: "index.js",
+        libraryTarget: 'this'
     },
     plugins: [
         new nodemonPlugin()
@@ -175,8 +176,5 @@ let serverConfig = Object.assign({
         minimize: false
     }
 }, basicConfig);
-
-console.log("Clientconfig:", clientConfig)
-console.log("serverConfig:", serverConfig)
 
 module.exports = [serverConfig]
