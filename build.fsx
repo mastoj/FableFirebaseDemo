@@ -58,3 +58,6 @@ Target.create "Watch" (fun _ ->
 
 // start build
 Target.runOrDefault "Build"
+
+
+//dotnet fable yarn-run fable-splitter --port free -- --config splitter.config.js -w

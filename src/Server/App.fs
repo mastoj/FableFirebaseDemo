@@ -8,4 +8,4 @@ module App =
 
     let private handler req (res: Response) = res.send("Hello") |> ignore
 
-    let helloworld = https.onRequest handler
+    let helloWorld = https.onRequest handler

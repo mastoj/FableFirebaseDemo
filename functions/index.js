@@ -101,7 +101,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function handler(req, res) {
-    res.send("Hello"), void 0;
+  res.send("Hello"), void 0;
 }
 
 const helloworld = firebase_functions__WEBPACK_IMPORTED_MODULE_0__["https"].onRequest(handler);
