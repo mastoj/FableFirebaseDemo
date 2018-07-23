@@ -90,21 +90,21 @@
 /*!***************************!*\
   !*** ./src/Server/App.fs ***!
   \***************************/
-/*! exports provided: helloworld */
+/*! exports provided: helloWorld */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "helloworld", function() { return helloworld; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "helloWorld", function() { return helloWorld; });
 /* harmony import */ var firebase_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase-functions */ "firebase-functions");
 /* harmony import */ var firebase_functions__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(firebase_functions__WEBPACK_IMPORTED_MODULE_0__);
 
 
 function handler(req, res) {
-  res.send("Hello"), void 0;
+    res.send("Hello"), void 0;
 }
 
-const helloworld = firebase_functions__WEBPACK_IMPORTED_MODULE_0__["https"].onRequest(handler);
+const helloWorld = firebase_functions__WEBPACK_IMPORTED_MODULE_0__["https"].onRequest(handler);
 
 /***/ }),
 
@@ -112,13 +112,13 @@ const helloworld = firebase_functions__WEBPACK_IMPORTED_MODULE_0__["https"].onRe
 /*!**********************************!*\
   !*** ./src/Server/Server.fsproj ***!
   \**********************************/
-/*! exports provided: helloworld */
+/*! exports provided: helloWorld */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.fs */ "./src/Server/App.fs");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "helloworld", function() { return _App_fs__WEBPACK_IMPORTED_MODULE_0__["helloworld"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "helloWorld", function() { return _App_fs__WEBPACK_IMPORTED_MODULE_0__["helloWorld"]; });
 
 
 
