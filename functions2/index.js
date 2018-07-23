@@ -1,4 +1,4 @@
-(function(e, a) { for(var i in a) e[i] = a[i]; }(this, /******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -81,59 +81,58 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/Server/Server.fsproj");
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-/***/ "./src/Server/App.fs":
-/*!***************************!*\
-  !*** ./src/Server/App.fs ***!
-  \***************************/
-/*! exports provided: helloworld */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+module.exports = require("firebase-functions");
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "helloworld", function() { return helloworld; });
-/* harmony import */ var firebase_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase-functions */ "firebase-functions");
-/* harmony import */ var firebase_functions__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(firebase_functions__WEBPACK_IMPORTED_MODULE_0__);
 
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.helloworld = undefined;
+
+var _firebaseFunctions = __webpack_require__(0);
 
 function handler(req, res) {
     res.send("Hello"), void 0;
 }
 
-const helloworld = firebase_functions__WEBPACK_IMPORTED_MODULE_0__["https"].onRequest(handler);
+const helloworld = exports.helloworld = _firebaseFunctions.https.onRequest(handler);
 
 /***/ }),
-
-/***/ "./src/Server/Server.fsproj":
-/*!**********************************!*\
-  !*** ./src/Server/Server.fsproj ***!
-  \**********************************/
-/*! exports provided: helloworld */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _App_fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.fs */ "./src/Server/App.fs");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "helloworld", function() { return _App_fs__WEBPACK_IMPORTED_MODULE_0__["helloworld"]; });
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-/***/ }),
+var _App = __webpack_require__(1);
 
-/***/ "firebase-functions":
-/*!*************************************!*\
-  !*** external "firebase-functions" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("firebase-functions");
+Object.keys(_App).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _App[key];
+    }
+  });
+});
 
 /***/ })
-
-/******/ })));
+/******/ ]);
 //# sourceMappingURL=index.js.map
