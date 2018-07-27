@@ -166,7 +166,8 @@ let serverConfig = Object.assign({
     entry: resolve("src/Server/Server.fsproj"),
     output: {
         path: resolve("functions/"),
-        filename: "index.js"
+        filename: "index.js",
+        libraryTarget: "commonjs2"
     },
     plugins: [
         new nodemonPlugin()
